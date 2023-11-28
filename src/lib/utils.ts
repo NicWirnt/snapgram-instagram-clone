@@ -25,7 +25,7 @@ export function formatDateString(dateString: string) {
   return `${formattedDate} at ${time}`;
 }
 
-export function timeAgo(dateString: string): string {
+export function timeAgo(dateString: any): string {
   const currentDate: Date = new Date();
   const inputDate: Date = new Date(dateString);
 
